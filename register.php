@@ -108,6 +108,8 @@ require 'includes/form_handlers/login_handler.php';
         </div>
     </div>
 
+    <script src="assets/js/register.js"></script>
+
 
 </body>
 
