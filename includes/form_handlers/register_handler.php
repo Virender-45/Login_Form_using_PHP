@@ -107,10 +107,10 @@ if(isset($_POST['register_button'])){
         //profile picture assignment
         $rand = rand(1,2);
         if ($rand == 1){
-            $profile_pic = "C:/xampp/htdocs/Demo/assets/images/profile_pics/defaults/head_deep_blue.png";
+            $profile_pic = "C:/xampp/htdocs/main/assets/images/profile_pics/defaults/head_deep_blue.png";
         }
         else if($rand == 2){
-        $profile_pic = "C:/xampp/htdocs/Demo/assets/images/profile_pics/defaults/head_emerald.png";
+        $profile_pic = "C:/xampp/htdocs/main/assets/images/profile_pics/defaults/head_emerald.png";
         }
 
         $query = mysqli_query($con, "INSERT INTO users VALUES ('', '$fname', '$lname', '$username', '$em', '$password', '$date', '$profile_pic', '0', '0', 'no', ',')");
