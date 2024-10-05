@@ -108,8 +108,26 @@ require 'includes/form_handlers/login_handler.php';
         </div>
     </div>
 
-    <script src="assets/js/register.js"></script>
+<script>
+    
+$(document).ready(function() {
 
+	//On click signup, hide login and show registration form
+	$("#signup").click(function() {
+		$("#first").slideUp("slow", function(){
+			$("#second").slideDown("slow");
+		});
+	});
+
+	//On click signup, hide registration and show login form
+	$("#signin").click(function() {
+		$("#second").slideUp("slow", function(){
+			$("#first").slideDown("slow");
+		});
+	});
+});
+
+</script>
 
 </body>
 
