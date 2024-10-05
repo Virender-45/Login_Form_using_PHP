@@ -125,5 +125,6 @@ if(isset($_POST['register_button'])){
 
     }
 
-    
+    // Close connection
+    mysqli_close($con);
 }
